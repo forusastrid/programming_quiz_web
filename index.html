@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dldvh znlwm</title>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" id="start-screen">
+    <h1>인포 퀴즈</h1>
+    <input type="text" id="nickname" placeholder="닉네임을 입력하세요">
+    <button onclick="startQuiz()">시작하기</button>
+  </div>
+
+  <div class="container" id="quiz-screen" style="display:none;">
+    <div id="timer">30</div>
+    <div id="question"></div>
+    <div id="choices"></div>
+  </div>
+
+  <div class="container" id="end-screen" style="display:none;">
+    <h1>🎉 퀴즈 완료!</h1>
+    <p id="final-score"></p>
+    <button onclick="restartQuiz()">다시 시작하기</button>
+    <div id="leaderboard-end"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="db.js"></script>
+</body>
+</html>
